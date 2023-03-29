@@ -1,11 +1,15 @@
-import operaciones.suma
+import operaciones.calculadora
 
+oc = operaciones.calculadora
 
-def main():
-    mp = operaciones.suma.Multiplicador()
-    mp.multiplica(10, 5)
-    operaciones.suma.suma(2, 2)
+suma = oc.sumar(2, 3)
+print("La suma es:", suma)
 
+resta = oc.restar(5, 1)
+print("La resta es:", resta)
 
-if __name__ == "__main__":
-    main()
+multiplicacion = oc.multiplicar(4, 6)
+print("La multiplicación es:", multiplicacion)
+
+division = oc.dividir(10, 2)
+print("La división es:", division)

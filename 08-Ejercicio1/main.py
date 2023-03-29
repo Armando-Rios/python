@@ -1,11 +1,10 @@
 import pickle
 
 
-class Juguete:
-    pass
+f = open("archivo.txt", "w")
+f.write("Archivo Creado\n")
+f.close()
 
-
-f = open("archivo.txt", "x")
-f.close
-f.write("Hola")
-f.close
+f = open("archivo.txt", "r+")
+f.readline()
+f.write("Escribiendo otra linea\n")

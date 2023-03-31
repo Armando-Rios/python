@@ -1,5 +1,7 @@
 from functools import reduce
 
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
 
 def suma_impares(lista):
     # Obtener los elementos impares de la lista
@@ -9,5 +11,4 @@ def suma_impares(lista):
     return suma
 
 
-lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(suma_impares(lista))  # Devuelve 25

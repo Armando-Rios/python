@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Detalle de Director</title>
+  </head>
+  <body>
+    <h1>{{ director.nombre }}</h1>
+    <p>Fecha de Nacimiento: {{ director.fecha_nacimiento }}</p>
+    <p>Nacionalidad: {{ director.nacionalidad }}</p>
+    <h2>Películas</h2>
+    <ul>
+      {% for pelicula in director.pelicula_set.all %}
+      <li>
+        <a href="{% url 'peliculas_director' pelicula.id %}"
+          >{{ pelicula.titulo }}</a
+        >
+      </li>
+      {% empty %}
+      <li>No hay películas registradas para este director.</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

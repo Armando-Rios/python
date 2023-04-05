@@ -1,0 +1,15 @@
+<!-- detalle_pelicula.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Detalle de Película</title>
+  </head>
+  <body>
+    <h1>{{ pelicula.titulo }}</h1>
+    <p><strong>Director:</strong> {{ pelicula.titulo }}</p>
+    <p><strong>Descripción:</strong> {{ pelicula.descripcion }}</p>
+    <a href="{% url 'detalle_director' director.id %}"
+      >Volver a las películas del director</a
+    >
+  </body>
+</html>
